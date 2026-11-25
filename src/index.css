@@ -1,0 +1,144 @@
+:root{
+    --bg: #FFFFFF;
+    -surface: #FAF7F0;
+    --text: #1A1A1A;
+    --gold: #C9A227;
+    --gold-deep: #9A7B1C;
+    --radius: 12px;
+    --shadow: 10px;
+    --space: 24px;
+    --font: 
+}
+
+/*THEME SOMBRE*/
+
+[data-theme="dark"]{
+    --bg: #0D0D0D;
+    --surface: #1A1A1A;
+    --text: #F5F1E6;
+    --gold-deep: #D4AF37;
+}
+
+
+body{
+    margin: 0;
+    background: var(--bg); 
+    color: var(--text);
+    font-family: "Playfair Display", sans-serif;
+}
+
+/*RESET*/
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space);
+    position: sticky;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--gold);
+}
+
+.logo{
+    font-size: 1.4rem;
+    color: var(--gold-deep);
+    letter-spacing: 3px;
+}
+
+.menu{
+    gap: 100px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.6s;
+}
+
+.menu a:hover{
+    color: var(--gold-deep);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-theme{
+    background: var(--gold);
+    color: var(--text);
+    border: none;
+    border-radius: 999px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.btn-theme:hover{
+    opacity: 0.85;
+}
+
+form{
+     max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+form button{
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 999px;
+}
+
+input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid var(--gold-deep);
+
+}
+
+select{
+    padding: 20px;
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid var(--gold-deep);
+
+}
+
+.btn{
+    background: var(--gold);
+    color: #1A1A1A;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    
+}
+
+label{
+    display: block;
+    
+}
